@@ -4,9 +4,14 @@ import Note from '../Note/Note';
 class NoteListMain extends Component {
     render(){
         console.log('props in NoteListMain: ', this.props)
-        const notes = this.props.notes.filter((note) => 
-            note.folderId === this.props.match.params.folderId
-        )
+        const notes = this.props.notes.filter((note) => {
+            if(!this.props.match.params.folderId){
+                return note
+            }
+            else {
+                return note.folderId === this.props.match.params.folderId
+            }
+        })
         console.log(notes)
         return (
             <ul>

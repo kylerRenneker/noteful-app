@@ -8,7 +8,6 @@ class App extends Component {
   state = {
     STORE
   }
-  
 
   render() {
     console.log(this.state.STORE)
@@ -24,7 +23,7 @@ class App extends Component {
           <Route path='/folder/:folderId' render={(props) => <FolderNavLinks folders={folders} notes={notes} {...props}/>}></Route>
         </nav>
         <main>
-          <Route path='/' render={(props) => <NoteListMain folders={folders} notes={notes} {...props}/>}></Route>
+          <Route exact path='/' render={(props) => <NoteListMain folders={folders} notes={notes} {...props}/>}></Route>
           <Route path='/folder/:folderId' render={(props) => <NoteListMain folders={folders} notes={notes} {...props}/>}></Route>
         </main>
       </div>
