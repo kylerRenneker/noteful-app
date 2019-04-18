@@ -25,8 +25,8 @@ class NoteListMain extends Component {
     }
 }
 
-NoteListMain.defaultProps = {
-    notes: []
-}
+// NoteListMain.defaultProps = {
+//     notes: []
+// }
 
 export default NoteListMain;
