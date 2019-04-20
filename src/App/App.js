@@ -3,6 +3,8 @@ import { Route, Link } from 'react-router-dom';
 import STORE from '../dummyStore';
 import FolderNavLinks from '../FolderNavLinks/FolderNavLinks';
 import NoteListMain from '../NoteListMain/NoteListMain';
+import NotePageNav from '../NotePageNav/NotePageNav';
+import NotePageMain from '../NotePageMain/NotePageMain';
 
 class App extends Component {
   state = {

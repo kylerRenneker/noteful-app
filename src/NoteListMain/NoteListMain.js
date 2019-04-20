@@ -17,7 +17,8 @@ class NoteListMain extends Component {
             <ul>
                {notes.map((note) => 
                    <li key={note.id}>
-                       <Note name={note.name} dateModified={note.modified}/>
+                       <Note name={note.name} modified={note.modified} 
+                       content={note.content} id={note.id}/>
                    </li>
                )}
             </ul>
