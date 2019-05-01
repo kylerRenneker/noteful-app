@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class backButton extends Component {
+class BackButton extends Component {
     render() {
         return (
-            <div>
-
-            </div>
+            <>
+                <button onClick={this.props.history.goBack}>Back</button>
+            </>
         );
     }
 }
 
-export default backButton;
+export default BackButton;
